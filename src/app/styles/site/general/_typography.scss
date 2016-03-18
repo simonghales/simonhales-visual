@@ -1,0 +1,81 @@
+%font--default {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %font--default;
+}
+
+body {
+  @extend %font--default;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.title--article {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.title--label {
+  color: rgba(255,255,255,0.3);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+// Text
+
+.text--desc {
+  line-height: 1.8em;
+}
+
+// Anchors
+
+.anchor--block {
+  @extend .clearfix;
+  font-size: 16px;
+
+  $icon-height: 26px;
+  .icon {
+    float: left;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.17);
+    color: #000000;
+    width: $icon-height;
+    height: $icon-height;
+    text-align: center;
+    line-height: $icon-height;
+  }
+
+  .text {
+    color: rgba(255,255,255,0.41);
+    font-size: 14px;
+    float: left;
+    display: inline-block;
+    height: $icon-height;
+    line-height: $icon-height - 2px;
+    border-bottom: 3px solid rgba(255,255,255,0.17);
+    padding: 0 6px;
+    font-weight: 500;
+  }
+
+}

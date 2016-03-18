@@ -1,0 +1,60 @@
+.big-preview {
+  @extend .thumbnail;
+  background-image: url(/assets/images/bg_space_high.jpg);
+  height: 100vh;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+  $content-height: 650px;
+
+  .big-preview__content {
+    @extend .clearfix;
+  }
+
+    .big-preview__image {
+      @extend .thumbnail;
+      @include box-shadow(0, 2px, 20px, rgba(0,0,0,0.35));
+      float: left;
+      width: 840px;
+      height: $content-height;
+      background-color: #000000;
+      background-image: url(/assets/images/soonis_cropped.png);
+    }
+
+    .big-preview__info {
+      float: left;
+      width: 420px;
+      height: $content-height;
+      padding-top: 60px;
+      padding-left: 45px;
+    }
+
+      .big-preview__title {
+        margin-bottom: 9px;
+      }
+
+      .big-preview__label {
+
+      }
+
+      .big-preview__links {
+        @extend .clearfix;
+        margin: 12px 0 20px 0;
+
+        a {
+          float: left;
+          margin-right: 10px;
+        }
+
+      }
+
+      .big-preview__text {
+        padding: 16px 14px;
+        background-color: rgba(0,0,0,0.12);
+        margin-left: -14px;
+      }

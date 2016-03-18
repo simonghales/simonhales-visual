@@ -1,0 +1,7 @@
+
+.icon-link:before { content: '\21'; } /* '!' */
+.icon-github-circled:before { content: '\22'; } /* '&quot;' */
+.icon-github-squared:before { content: '\23'; } /* '#' */
+.icon-twitter:before { content: '\24'; } /* '$' */
+.icon-twitter-squared:before { content: '\25'; } /* '%' */
+.icon-mail-squared:before { content: '\26'; } /* '&amp;' */
