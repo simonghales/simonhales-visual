@@ -7,6 +7,9 @@
 @import "styles/resources/mixins";
 @import "styles/resources/reset";
 
+/* Variables */
+@import "styles/variables/colours";
+
 /* General */
 @import "styles/site/general/base";
 @import "styles/site/general/common";
@@ -17,6 +20,7 @@
 /* Components */
 @import "styles/site/components/site-intro";
 @import "styles/site/components/big-preview";
+@import "styles/site/components/social-icons";
 
 /* Do not remove the comments below. It's the markers used by gulp-inject to inject
    all your sass files automatically */

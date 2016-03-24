@@ -1,17 +1,14 @@
 .site-into {
-  padding: 250px 0;
-  position: relative;
-  text-align: center;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 302px;
-    margin-left: -151px;
-    background-color: #F9F9F9;
-    z-index: -1;
-  }
-
+  padding: 220px 0;
 }
+
+  .download-wrapper {
+    padding-left: 10px;
+    margin-top: 24px;
+
+    a {
+      //display: inline-block;
+      //margin-top: 20px;
+    }
+
+  }

@@ -1,16 +1,19 @@
 body {
-  background-color: #ffffff;
+  background-color: #F5F5F5;
+  background-size: cover;
+  background-attachment: fixed;
+  @include gradient(#FBFBFB, #F5F5F5);
 
-  &::before {
-    @include gradient(rgba(255,255,255,0.15), rgba(255,255,255,0));
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 280px;
-    z-index: 100;
-    pointer-events: none;
-  }
+  //&::before {
+  //  @include gradient(rgba(255,255,255,0.15), rgba(255,255,255,0));
+  //  content: '';
+  //  position: fixed;
+  //  top: 0;
+  //  left: 0;
+  //  right: 0;
+  //  height: 280px;
+  //  z-index: 100;
+  //  pointer-events: none;
+  //}
 
 }

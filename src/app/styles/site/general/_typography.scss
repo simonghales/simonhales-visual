@@ -3,7 +3,9 @@
 }
 
 %font--fancy {
-  font-family: 'Lora', Helvetica, Arial, sans-serif;
+  //font-family: 'Lora', Helvetica, Arial, sans-serif;
+  //font-family: 'Vollkorn', Helvetica, Arial, sans-serif;
+  font-family: 'Droid Serif', Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -23,8 +25,8 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   @extend %font--default;
-  font-size: 16px;
-  color: #191919;
+  font-size: 17px;
+  color: #{map_get($colours, default)};
 }
 
 strong {
@@ -37,10 +39,10 @@ strong {
 
 .title--major {
   @extend %font--fancy;
-  font-size: 37px;
+  font-size: 42px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  line-height: 1.2em;
+  line-height: 1.3em;
 
   &.strong {
     font-weight: 700;
@@ -94,6 +96,56 @@ strong {
     border-bottom: 3px solid rgba(255,255,255,0.17);
     padding: 0 6px;
     font-weight: 500;
+  }
+
+}
+
+.anchor--download {
+  color: #{map_get($colours, light)};
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 3px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background-color: lighten(map_get($colours, light), 15);
+  }
+
+}
+
+.anchor--button {
+  @include transition(color 150ms ease);
+  @include box-shadow(0, 0, 6px, rgba(0,0,0,0.05));
+  @extend %font--fancy;
+  //@include border-radius(2px);
+  display: inline-block;
+  background-color: #ffffff;
+  @include gradient(#ffffff, #fcfcfc);
+  border: 1px solid #ffffff;
+  font-size: 15px;
+  padding: 9px 10px 8px 10px;
+  font-weight: 700;
+  font-style: italic;
+  color: darken(map_get($colours, light), 5);
+
+  &:active {
+    @include gradient(#fbfbfb, #fcfcfc);
+  }
+
+  &:hover {
+    color: darken(map_get($colours, light), 25);
+    text-decoration: none;
   }
 
 }

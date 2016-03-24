@@ -1,0 +1,37 @@
+.social-icons {
+  color: #{map_get($colours, light)};
+  cursor: default;
+  font-size: 18px;
+  margin: 18px 0;
+  padding-left: 10px;
+
+  a {
+    @include transition(all 150ms ease);
+    cursor: pointer;
+    display: inline-block;
+
+    &:active {
+      transform: translateY(1px);
+    }
+
+    &:hover {
+      color: darken(map_get($colours, light), 20);
+      text-decoration: none;
+    }
+
+  }
+
+  .icon {
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+  }
+
+  .email {
+    font-weight: 500;
+    margin-left: 4px;
+  }
+
+}
