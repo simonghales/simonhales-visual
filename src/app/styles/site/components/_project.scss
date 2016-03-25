@@ -1,0 +1,40 @@
+.projects {
+  margin-top: 160px;
+}
+
+.project {
+  margin: 160px 0;
+
+  .content--centered {
+    @extend .clearfix;
+  }
+
+}
+
+  .project__media {
+    float: left;
+    width: 600px;
+    margin-right: 40px;
+
+    img {
+      @include box-shadow(0, 5px, 17px, 2px, rgba(0,0,0,0.05));
+      border: 10px solid #ffffff;
+
+      transform: rotate(-2deg);
+      position: relative;
+      left: -10px;
+
+    }
+
+  }
+
+  .project__info {
+    overflow: hidden;
+
+    .title {
+      font-size: 1.6em;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+  }
