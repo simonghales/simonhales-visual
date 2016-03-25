@@ -1,5 +1,5 @@
 %font--default {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: 'Lora', Helvetica, Arial, sans-serif;
 }
 
 %font--fancy {
@@ -20,12 +20,12 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @extend %font--default;
+  @extend %font--fancy;
 }
 
 body {
   @extend %font--default;
-  font-size: 17px;
+  font-size: 16px;
   color: #{map_get($colours, default)};
 }
 
@@ -66,6 +66,24 @@ strong {
 .text--desc {
   color: rgba(255,255,255,0.76);
   line-height: 1.8em;
+}
+
+.text--major {
+  font-size: 1.6em;
+}
+
+.text--medium {
+  font-size: 1.3em;
+  line-height: 1.35em;
+}
+
+.text--average {
+  font-size: 1.15em;
+  line-height: 1.3em;
+}
+
+.text--small {
+  font-size: .95em;
 }
 
 // Anchors
@@ -125,19 +143,21 @@ strong {
 }
 
 .anchor--button {
-  @include transition(color 150ms ease);
+  @include transition(color 200ms ease);
   @include box-shadow(0, 0, 6px, rgba(0,0,0,0.05));
   @extend %font--fancy;
   //@include border-radius(2px);
   display: inline-block;
-  background-color: #ffffff;
-  @include gradient(#ffffff, #fcfcfc);
+  //background-color: #ffffff;
+  //@include gradient(#ffffff, #fcfcfc);
   border: 1px solid #ffffff;
   font-size: 15px;
   padding: 9px 10px 8px 10px;
-  font-weight: 700;
+  //font-weight: 700;
   font-style: italic;
   color: darken(map_get($colours, light), 5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
   &:active {
     @include gradient(#fbfbfb, #fcfcfc);
